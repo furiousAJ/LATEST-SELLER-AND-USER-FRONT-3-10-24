@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --text-dark: hsl(240, 54%, 15%);
+  --text-light: hsl(242, 18%, 64%);
+  --primary: hsl(222, 98%, 60%);
+  --primary-lighter: hsl(240, 33%, 86%);
+  --primary-gradient: linear-gradient(to right, #3671fd, #6f31ff);
+}
+
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  min-height: 100vh;
+  
+  
+}
+.sellerpostion{
+  display: flex;
+  justify-content: center;
+  padding-top:50px ;
+  
+}
+.sellercontainer {
+  max-width: 1070px;
+  width: 100%;
+  display: flex;
+  margin-inline: 1rem;
+}
+
+.sellerimage-section {
+  width: 50%;
+  position: relative;
+}
+.sellerimage-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.sellerimage-wrapper img {
+  object-fit: cover;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+.sellercontent-container {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  backdrop-filter: blur(30px);
+  padding: 2rem;
+  width: 64%;
+  color: var(--text-dark);
+  border-radius: 4px;
+  border: 1px solid hsl(0 100% 100% / 0.3);
+
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.sellercontent-container h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.sellercontent-container span {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 60rem) {
+  .sellercontainer {
+    width: 100%;
+    margin: 0;
+  }
+  .sellercontent-container {
+    width: 100%;
+  }
+}
+
+.sellerform-section {
+  width: 50%;
+  background-color: rgb(246, 246, 246);
+  padding: 2.5rem 1rem;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.sellerform-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.sellerlogo-container {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2.2rem;
+}
+
+.sellerform-wrapper > h2 {
+  margin-bottom: 0.1rem;
+}
+.sellerform-wrapper > p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.sellerinput-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sellerform-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.sellerform-group label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #16164d;
+}
+.sellerform-group input {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding: 0.5rem;
+  border: 2px solid var(--primary-lighter);
+  border-radius: 0.3rem;
+}
+.sellerform-group input:focus {
+  border: 2px solid #16164d;
+}
+
+.sellerremember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.sellerremember-me {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 0.6rem;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: grid;
+  place-content: center;
+}
+
+.sellerremember-me input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border: 1px solid var(--text-light);
+  border-radius: 2px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  background-color: white;
+  transform: scale(0);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.sellerremember-me input:checked {
+  background: var(--primary-gradient);
+}
+
+.sellerremember-me label {
+  color: var(--text-dark);
+  user-select: none;
+}
+.sellerremember-forgot a {
+  color: var(--primary);
+}
+.sellerremember-forgot a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+.sellerlogin-btn,
+.sellergoogle-signin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-radius: 0.7rem;
+}
+
+.sellerlogin-btn {
+  color: white;
+  background: var(--primary-gradient);
+}
+.sellerlogin-btn:hover {
+  opacity: 0.9;
+}
+
+.selleror-divider {
+  width: 100%;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-block: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.selleror-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 45%;
+  background-color: var(--text-light);
+}
+.selleror-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 1px;
+  width: 45%;
+  background-color: var(--text-light);
+}
+
+.sellergoogle-signin {
+  border: 2px ;
+  border-radius: 5px;
+}
+.sellergoogle-signin object {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .sellercontainer {
+    max-width: 80%;
+    flex-direction: column;
+    margin-inline: 0;
+  }
+
+  .sellerimage-section,
+  .sellerform-section {
+    width: 100%;
+  }
+
+  .sellerimage-section {
+    height: 25vh;
+  }
+  .sellercontent-container {
+    inset: 0;
+    transform: translate(0, 0);
+    padding: 1rem 1.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sellercontent-container h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .sellercontent-container p {
+    font-size: 0.75rem;
+  }
+
+  .sellerform-section {
+    flex: 1;
+    padding: 1rem 1rem;
+  }
+  .sellerlogo-container {
+    margin-bottom: 1rem;
+  }
+  .sellerform-wrapper > h2 {
+    font-size: 1.25rem;
+  }
+  .sellerform-wrapper > p {
+    margin-bottom: 1rem;
+  }
+  .sellerform-wrapper button {
+    font-size: 0.875rem;
+  }
+  .selleror-divider {
+    font-weight: 500;
+    margin-block: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 36.25rem) {
+  .sellercontainer {
+    max-width: 100%;
+  }
+  .sellerform-wrapper {
+    width: 100%;
+  }
+}
+.sellersign{
+  color: whitesmoke;
+  background-color: rgba(241, 49, 116, 0.943);
+  border-radius: 8px;
+}

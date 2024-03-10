@@ -1,0 +1,29 @@
+.about-us-container {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .about-us-content {
+    animation: scroll-down 20s linear infinite;
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  .about{
+   
+    color: rgb(7, 139, 93);
+  }
+  
+
+
+
+
+
+  

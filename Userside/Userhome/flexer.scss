@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  color: white;
+  background-color: #e9e9f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.hcontainer {
+  width: 1470px;
+  height: 440px;
+  display: flex;
+  gap: 2px;
+  margin-inline: 50px;
+  margin:-10px 25px 5px 25px;
+  
+
+}
+
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: ;
+  --bs-card-subtitle-color: ;
+  --bs-card-border-width: var(--bs-border-width);
+  
+  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+
+  --bs-card-color: ;
+  --bs-card-bg: 255px; /* Change the background color here */
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 70px; /* Set minimum width to 70 */
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  // background-color: var(--bs-card-bg);
+  
+  min-width: 70px;
+  height: 100%;
+  border-radius:  10px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+  --transition-timing: 0.25s;
+}
+
+.card.active {
+  flex-grow: 100;
+}
+
+.card > .background {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: left;
+  filter: brightness(0.8);
+  z-index: -1;
+  transition: var(--transition-timing) ease;
+}
+.card.active > .background {
+  filter: brightness(1) grayscale(0);
+}
+
+.card > .card-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  overflow: hidden;
+  transition: var(--transition-timing);
+  z-index: 10;
+}
+.card.active > .card-content {
+  inset: 20px;
+  top: auto;
+}
+
+.card-content * {
+  transition: var(--transition-timing);
+}
+
+.card-content > .profile-image {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card.active .profile-image {
+  border: 1px solid rgb(110, 252, 205);
+}
+.profile-image > svg {
+  stroke: #fefefe;
+}
+.card.active .profile-image > svg {
+  stroke: rgb(110, 252, 205);
+}
+
+.card-content > .title {
+  white-space: pre;
+  margin-left: 10px;
+  translate: 0 100%;
+  opacity: 0;
+  transition-delay: 0.3s;
+}
+.card.active .title {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.card > .backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  z-index: 0;
+  
+}
+
+

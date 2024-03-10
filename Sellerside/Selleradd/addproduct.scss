@@ -1,0 +1,108 @@
+.new {
+    width: 100%;
+   display: flex;
+   
+
+    .newContainer{
+        flex: 6;
+        align-items: center;
+
+        .top,.bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+
+            h1{
+                color: lightgray;
+                font-size: 20px;
+            }
+
+            .left{
+                
+                text-align: center;
+
+                img{
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: 100px;
+                    margin-top: 100px;
+                
+
+                }
+            }
+            .right{
+                flex: 2;
+                display: flex;
+                flex-wrap: wrap;
+                
+                justify-content: space-around;
+
+
+                form{
+                   gap: 40px;
+                   white-space: 20px;
+                   padding: 20px;
+                    
+                    justify-content: space-around;
+
+
+                    .formInput{
+                        width: 40%;
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon{
+                                cursor: pointer;
+                            }
+                        }
+
+
+                        
+                    }
+                   
+                }
+            }
+           
+
+        }
+    }
+}
+.filephoto{
+    
+   margin: 0px;
+    
+}
+.button{
+  
+   
+   color: blue;
+    
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.activebutton{
+
+width: 90px;
+height: 30px;
+}
+.boxact{
+    width: 90px;
+    height: 30px;
+    border-radius: 40px;
+}
+.boxcategory{
+    width: 30ch;
+    height: 55px; 
+    border-radius: 5px; 
+}
+.alignform{
+    align-items: center;
+}

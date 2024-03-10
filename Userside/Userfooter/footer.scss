@@ -1,0 +1,178 @@
+/* Add this CSS in a separate stylesheet or inline within your component */
+
+.footer {
+    
+    
+    background-color: rgba(156, 206, 126, 0.712);
+    margin: 20px 0px 0px 0px;
+    color: #333;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 0px 0px 0px 10px;
+    display: flex;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .footer-section p {
+    font-size: 13px;
+  }
+  .ficon{
+    color:#3bb77e ;
+    
+  
+  }
+.playstore{
+    margin: 0px 20px 0px 0px;
+}
+
+  .playstore img{
+    height: 40px;
+    width: 150px;
+    object-fit: fill;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .fcustarr{
+    color: #006aff;
+    font-size: 18px;
+    margin-left: 50px;
+   
+  }
+
+  .fcustarrange{
+    margin: 0px 10px 0px 0px;
+    color: #006aff;
+    margin: -10px 0px 0px -100px ;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #8d8484;
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ul {
+    display: flex;
+    list-style: none;
+    gap: 1.0rem;
+  }
+  
+  .item a {
+    text-decoration: none;
+    width: 2.0rem;
+    height: 2.0rem;
+    background-color: hsl(203, 92%, 97%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid hsl(203, 92%, 97%);
+    overflow: hidden;
+    
+  }
+ .social-icons{
+    margin-left: -27px;
+ }
+ .fsize{
+    font-size: 14px;
+ }
+  
+  .item a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+  }
+  
+  .item:hover a::before {
+    scale: 1 1;
+  }
+  
+  .iconfooter {
+    font-size: 2rem;
+    color: hsl(203, 85%, 71%);
+    transition: 0.5s ease;
+    z-index: 2;
+  }
+  
+  .item a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .item:nth-child(1) {
+    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+  }
+  .item:nth-child(2) {
+    --bg-color: #006aff;
+  }
+  .item:nth-child(3) {
+    --bg-color: #ff0000;
+  }
+  .item:nth-child(4) {
+    --bg-color: #000;
+  }
+
+  .fimg{
+    height: 100px;
+    width: 100px;
+    display: flex;
+  }
+  /* Add more styling as needed based on your design preferences */
+
+
+  .footerWrapper
+  {
+    padding: 25px 0px 0px 0px;
+    
+    }
+.footerWrapper .footerBoxes .box{
+    background: #F4F6FA;
+     padding: 15px 15px 15px 15px;
+      border-radius: 15px; height: 80px;
+     } 
+.footerWrapper .footerBoxes .box .info{
+    padding-left: 25px;
+}
+.footerWrapper .footerBoxes .box  img{
+    position: relative;
+     transition: all 0.2s ease-in-out;
+      height: 40px ;
+    }
+.footerWrapper .footerBoxes .box .info h4{font-size: 18px; font-weight: 600;}
+.footerWrapper .footerBoxes .box .info p{margin-bottom: 0px; font-size: 14px; opacity: 0.8; display: flex;}
+.footerWrapper .footerBoxes .box:hover img{transform: translateY(-5px);}
+
+footer p, footer a{font-size: 15px;}
+
+footer{padding: 50px 0px; padding-bottom: 0px;}
+
+

@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+
+
+.hnavbar {
+  
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 70px;
+  background-color: rgb(123, 200, 123);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.hnavbar .hlogo i {
+  color: #0aa5ff;
+  font-size: 22px;
+  
+}
+
+.hnavbar .hlogo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(3, 1, 1);
+  margin-left: 12px;
+  
+  
+}
+
+.hmenu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.hmenu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #ccc3c3;
+  padding-inline: 24px;
+  margin-top:0px;
+}
+
+.hmenu-links a {
+  font-weight: 500;
+  color: #060101;
+  padding: 8px 16px;
+}
+.hmenu-links a:hover {
+  color: white;
+}
+
+
+.hmenu-links span {
+  font-weight: 500;
+  color: #060101;
+  padding: 8px 16px;
+}
+.hmenu-links span:hover {
+  color: white;
+}
+
+.hlog-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #fbfbfb;
+  border-radius: 10px;
+  border: 2px solid #0aa5ff;
+  transition: 0.2s;
+}
+.hreg-in {
+  font-weight: 500;
+  padding: 7px 10px;
+  background-color: transparent;
+  color: #fbfbfb;
+  border-radius: 10px;
+  border: 2px solid #d61981e4;
+  transition: 0.2s;
+  margin-top: 0px;
+}
+
+.hreg-in:hover {
+  background-color: #ff0a64ab;
+  color: white;
+}
+.hlog-in:hover {
+  background-color: #0aa5ff;
+  color: white;
+}
+
+.hmenu-btn {
+  font-size: 32px;
+  color: rgb(156, 93, 93);
+  display: none;
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(216, 0, 0);
+}
+
+section > h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  text-wrap: balance;
+}
+
+@media (max-width: 53rem) {
+  .hmenu {
+    display: none;
+  }
+
+  .hmenu-btn {
+    display: block;
+  }
+}
+.hpi{
+    margin-left: -10px;
+    margin-top: -35px;
+  display: flex;
+  width: 60px;
+  align-content: last baseline;
+  max-height: 10;
+  
+
+}
+.hdropbox{
+  background-color: rgb(123, 200, 123);  
+  border: none;
+  font-size: 17px;
+  align-items: center;
+}
+
+
+
+button {
+  border: 0;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.hdropdowns {
+  display: flex;
+
+}
+.hdropdown {
+  position: relative;
+ 
+}
+
+.hdropdown-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+  margin-top: -1px;
+}
+.hdropdown:hover {
+  background-color: rgb(123, 200, 123);  
+  cursor: pointer;
+}
+.hdropdown-button span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.hdropdown-button i {
+  font-size: 14px;
+}
+
+.hdropdown:hover > .hdropdown-menu {
+ display: flex;
+  flex-direction: column;
+  display: block;
+}
+
+.hdropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the button */
+  left: 0;
+  background-color: rgb(123, 200, 123); 
+  padding: 5px;
+  z-index: 1; /* Ensure the dropdown is above the image */
+}
+
+.hdropdown-menu button {
+  padding: 12px 24px;
+}
+
+.hdropdown-menu button:hover {
+  background-color: hsla(90, 4%, 10%, 0.521);
+  width: 55%;
+}
+
+.husernavContainer {
+ height: 50px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.husersearchContainer {
+  display: flex;
+  background-color: rgb(123, 200, 123); 
+  
+ 
+}
+
+.husersearchInput {
+  padding: 10px;
+  width: 200px;
+  background-color: rgb(123, 200, 123); 
+  border-radius: 30px 0px 0px 30px  ;
+  
+}
+
+.husersearchButton {
+  padding: 6px 16px;
+  background-color: #000100a8;
+  color: #dadada;
+  border: none;
+  cursor: pointer;
+  margin-right: 40px;
+  border-radius: 0px 30px 30px 0px ;
+}
+// .hhicon{
+//   top:150px
+// } 

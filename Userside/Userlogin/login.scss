@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --text-dark: hsl(240, 54%, 15%);
+  --text-light: hsl(242, 18%, 64%);
+  --primary: hsl(222, 98%, 60%);
+  --primary-lighter: hsl(240, 33%, 86%);
+  --primary-gradient: linear-gradient(to right, #3671fd, #6f31ff);
+}
+
+// *,
+// *::before,
+// *::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  min-height: 100vh;
+  
+  
+}
+.userpostion{
+  display: flex;
+  justify-content: center;
+  padding-top:50px ;
+  
+}
+.usercontainer {
+  max-width: 1070px;
+  width: 100%;
+  display: flex;
+  margin-inline: 1rem;
+}
+
+.userimage-section {
+  width: 50%;
+  position: relative;
+}
+.userimage-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.userimage-wrapper img {
+  object-fit: cover;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+.usercontent-container {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  backdrop-filter: blur(30px);
+  padding: 2rem;
+  width: 64%;
+  color: var(--text-dark);
+  border-radius: 4px;
+  border: 1px solid hsl(0 100% 100% / 0.3);
+
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.usercontent-container h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.usercontent-container span {
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 60rem) {
+  .usercontainer {
+    width: 100%;
+    margin: 0;
+  }
+  .usercontent-container {
+    width: 100%;
+  }
+}
+
+.userform-section {
+  width: 50%;
+  background-color: rgb(246, 246, 246);
+  padding: 2.5rem 1rem;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.userform-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.userlogo-container {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 2.2rem;
+}
+
+.userform-wrapper > h2 {
+  margin-bottom: 0.1rem;
+}
+.userform-wrapper > p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.userinput-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.userform-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.userform-group label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #16164d;
+}
+.userform-group input {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding: 0.5rem;
+  border: 2px solid var(--primary-lighter);
+  border-radius: 0.3rem;
+}
+.userform-group input:focus {
+  border: 2px solid #16164d;
+}
+
+.userremember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.userremember-me {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  gap: 0.6rem;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: grid;
+  place-content: center;
+}
+
+.userremember-me input {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border: 1px solid var(--text-light);
+  border-radius: 2px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  background-color: white;
+  transform: scale(0);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.userremember-me input:checked {
+  background: var(--primary-gradient);
+}
+
+.userremember-me label {
+  color: var(--text-dark);
+  user-select: none;
+}
+.userremember-forgot a {
+  color: var(--primary);
+}
+.userremember-forgot a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+}
+
+.userlogin-btn,
+.usergoogle-signin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.userlogin-btn {
+  color: white;
+  background: var(--primary-gradient);
+}
+.userlogin-btn:hover {
+  opacity: 0.9;
+}
+
+.useror-divider {
+  width: 100%;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-block: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.useror-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 45%;
+  background-color: var(--text-light);
+}
+.useror-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 1px;
+  width: 45%;
+  background-color: var(--text-light);
+}
+
+.usergoogle-signin {
+  border: 2px solid var(--primary-lighter);
+}
+.usergoogle-signin object {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .usercontainer {
+    max-width: 80%;
+    flex-direction: column;
+    margin-inline: 0;
+  }
+
+  .userimage-section,
+  .userform-section {
+    width: 100%;
+  }
+
+  .userimage-section {
+    height: 25vh;
+  }
+  .usercontent-container {
+    inset: 0;
+    transform: translate(0, 0);
+    padding: 1rem 1.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .usercontent-container h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .usercontent-container p {
+    font-size: 0.75rem;
+  }
+
+  .userform-section {
+    flex: 1;
+    padding: 1rem 1rem;
+  }
+  .userlogo-container {
+    margin-bottom: 1rem;
+  }
+  .userform-wrapper > h2 {
+    font-size: 1.25rem;
+  }
+  .userform-wrapper > p {
+    margin-bottom: 1rem;
+  }
+  .userform-wrapper button {
+    font-size: 0.875rem;
+  }
+  .useror-divider {
+    font-weight: 500;
+    margin-block: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 36.25rem) {
+  .usercontainer {
+    max-width: 100%;
+  }
+  .userform-wrapper {
+    width: 100%;
+  }
+}
+.usersign{
+  color: whitesmoke;
+  background-color: rgba(12, 247, 192, 0.333);
+}
+.error-message{
+  margin: -10px -10px -10px -10px -10px;
+  color: red;
+ 
+}
